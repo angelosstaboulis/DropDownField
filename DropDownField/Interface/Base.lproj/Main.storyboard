@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DropDownField" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aXv-HT-ik7">
+                                <rect key="frame" x="37" y="171" width="340" height="537.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eVj-ze-0zD">
+                                        <rect key="frame" x="20" y="58.5" width="311" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="hML-Xr-mue"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="txtDropDown:" destination="BYZ-38-t0r" eventType="editingChanged" id="LVx-Lc-goH"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DropDown Field" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAh-6A-HfM">
+                                        <rect key="frame" x="20" y="15" width="137" height="20.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="137" id="zYl-Ae-tQ0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstItem="eVj-ze-0zD" firstAttribute="centerX" secondItem="aXv-HT-ik7" secondAttribute="centerX" constant="5.5" id="6bT-Zj-gc4"/>
+                                    <constraint firstItem="FAh-6A-HfM" firstAttribute="top" secondItem="aXv-HT-ik7" secondAttribute="top" constant="15" id="c24-SD-ydo"/>
+                                    <constraint firstItem="FAh-6A-HfM" firstAttribute="leading" secondItem="aXv-HT-ik7" secondAttribute="leading" constant="20" id="naZ-02-KW8"/>
+                                    <constraint firstItem="FAh-6A-HfM" firstAttribute="leading" secondItem="eVj-ze-0zD" secondAttribute="leading" id="src-eT-SWJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="eVj-ze-0zD" secondAttribute="bottom" constant="445" id="srm-Vm-zQw"/>
+                                    <constraint firstItem="eVj-ze-0zD" firstAttribute="top" secondItem="FAh-6A-HfM" secondAttribute="bottom" constant="23" id="wUa-rE-krS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
+                        <constraints>
+                            <constraint firstItem="aXv-HT-ik7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C4q-Go-XoZ"/>
+                            <constraint firstItem="aXv-HT-ik7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="LLE-ZY-avd"/>
+                            <constraint firstItem="aXv-HT-ik7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="127" id="nDz-FV-c0Y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="srm-Vm-zQw" id="t0r-gl-Hff"/>
+                        <outlet property="txtDropDown" destination="eVj-ze-0zD" id="xzH-RS-8O6"/>
+                        <outlet property="txtDropDownHeight" destination="hML-Xr-mue" id="pH2-iL-Fi0"/>
+                        <outlet property="txtDropDownTop" destination="wUa-rE-krS" id="YsY-do-FgT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-75.362318840579718" y="61.607142857142854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
